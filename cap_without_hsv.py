@@ -28,7 +28,7 @@ def main():
     while True:
         ret, frame = cam.read()
         if not ret:
-            print("failed to grab frame")
+            print("Failed to read the frame")
             break
         global img
         img = frame
