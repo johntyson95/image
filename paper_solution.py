@@ -10,12 +10,7 @@ WINDOW_NAME = "Paper Solution"
 def clickCallback(event,x,y,flags,param):
   if event == cv2.EVENT_LBUTTONDOWN:
     global img,roi,roi_hist,term_crit
-  
-    roi = cv2.selectROI(WINDOW_NAME,img)
-    roi_img = img[int(roi[1]):int(roi[1]+roi[3]), int(roi[0]):int(roi[0]+roi[2])]
-    hsv_roi =  cv2.cvtColor(roi_img, cv2.COLOR_BGR2HSV)
-    roi_hist = cv2.calcHist([hsv_roi],[0],None,[180],[0,180])
-    roi_hist = cv2.normalize(roi_hist,roi_hist,0,255,cv2.NORM_MINMAX)
+
     # Setup the termination criteria, either 10 iteration or move by at least 1 pt
     term_crit = ( cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 1 )  
     print(roi)
