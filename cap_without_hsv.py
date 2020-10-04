@@ -11,8 +11,8 @@ def capture_click(event,x,y,flags,param):
         pixel = img[y,x]
 
         print(x,y)
-        upper =  np.array([int(pixel[0]+(COLOR_RANGE/float(100))*pixel[0]), int(pixel[1]+(COLOR_RANGE/float(100))*pixel[1]), int(pixel[2]+(COLOR_RANGE/float(100))*pixel[2])])
-        lower =  np.array([int(pixel[0]-(COLOR_RANGE/float(100))*pixel[0]), int(pixel[1]-(COLOR_RANGE/float(100))*pixel[1]), int(pixel[2]-(COLOR_RANGE/float(100))*pixel[2])])
+        upper =  np.array([int(pixel[0]+(COLOR_RANGE/int(100))*pixel[0]), int(pixel[1]+(COLOR_RANGE/int(100))*pixel[1]), int(pixel[2]+(COLOR_RANGE/int(100))*pixel[2])])
+        lower =  np.array([int(pixel[0]-(COLOR_RANGE/int(100))*pixel[0]), int(pixel[1]-(COLOR_RANGE/int(100))*pixel[1]), int(pixel[2]-(COLOR_RANGE/int(100))*pixel[2])])
 
         print(upper,lower)
         lowers.append(lower)
