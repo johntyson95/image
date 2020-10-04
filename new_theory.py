@@ -42,7 +42,7 @@ def determine_thresholds(event,x,y,flags,param):
 		lowers.append(lower)
 
 def main():
-	cam = cv2.VideoCapture("video.mp4")
+	cam = cv2.VideoCapture(1)
 
 	cv2.namedWindow(WINDOW_NAME)
 
