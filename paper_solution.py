@@ -4,7 +4,7 @@ img = None
 roi = None
 roi_hist = None
 term_crit = None
-COLOR_RANGE=20
+COLOR_RANGE=35
 WINDOW_NAME = "Paper Solution"
 
 def clickCallback(event,x,y,flags,param):
