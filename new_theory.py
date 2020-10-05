@@ -4,7 +4,7 @@ import numpy as np
 WINDOW_NAME = "Video"
 img = None
 
-COLOR_RANGE=0.55
+COLOR_RANGE=0.35
 
 lowers = []
 uppers = []
