@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 img = None
 
-COLOR_RANGE=18
+COLOR_RANGE=30
 lowers = []
 uppers = []
 def capture_click(event,x,y,flags,param):
